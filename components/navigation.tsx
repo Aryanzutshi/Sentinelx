@@ -6,6 +6,8 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { useSDK } from "@metamask/sdk-react"
 import toast from "react-hot-toast"
+import logo from "@/public/SENTINEL LOGO.svg"
+import Image from "next/image"
 
 
 export function Navigation() {
@@ -45,7 +47,7 @@ export function Navigation() {
     >
       <div className="max-w-7xl mx-auto px-4 flex items-center justify-between">
         <div className="flex items-center">
-          <Shield className="h-8 w-8 text-green-500 mr-2" />
+          <Image src={logo} alt="Sentinel Logo" width={30} height={30}  className="mr-2 mb-1"/>
           <span className="text-xl font-bold"><Link href="/">Sentinel</Link></span>
         </div>
 
